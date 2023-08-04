@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- The very first thing we added to this is the DOCTYPE. This is important because we must declare the language we are working with. After that we must add is the html tag. All of our content and metadata must be contained inside of this element. Next we will add the head element. . -->
+ <head>
+   <meta charset="utf-8">
+   <!-- The following meta tag is very important for responsive design, it addresses the scaling of elements. -->
+   <meta name="viewport" content="width=device-width, initial-sclae=1">
+   <!-- next important tag is the title tag -->
+   <title>Online Pizza Order Form</title>
+   <!-- next will add the page description -->
+   <meta name="discription" content="This is pizza ordering form">
+   <!-- The next meta tag speaks directly to search engines. We use this to tell search engines whether we want our application hidden or if we want the website indexed. -->
+   <meta name="robots" content="noindex, nofollow">
+   <!--Now we will like css style page to our html page.-->
+   <link rel="stylesheet" href="./Css/style.css">
+ </head>
+ <body background="../assignment 2/img/98ed8912-09c0-4b5a-ba0b-6578d284d6b9.jpeg">
+   <!--First we will add our header element, this element will contain our logos and navigation. -->
+   <header>
+
+     <!--Adding div which makes easy for us to change or style the content in css.  -->
+     <!--Adding our logo-->
+     <div>
+       <a href="index.html"><img src="../assignment 2/img/pizzeria-singh-moers-homberger-str-moers.png" alt="our logo"></a>
+     </div>
+   </header>
+   <main>
+     <section>
+       <form method="post" action="/">
+
+            <!-- Adding h1 which is a important element called heading element. There are 6 heading elements (h1, h2, h3, h4, h5 and h6). This element is used for heading. -->
+            <h1>Order Your Pizza</h1>
+
+            <!--Adding div element which will be benefit in css.-->
+            <div>
+              <!--Types of pizza's-->
+              <p>Pizza Types:</p>
+              <input type="checkbox" id="Cheese" name="Pizza Types" value="Cheese">
+              <label>Cheese</label>
+              <input type="checkbox" id="Mexican" name="Pizza Types" value="Mexican">
+              <label>Mexican</label>
+              <input type="checkbox" id="Margherita" name="Pizza Types" value="Margherita">
+              <label>Margherita</label>
+              <input type="checkbox" id="Pepperoni" name="Pizza Types" value="Pepperoni">
+              <label>Pepperoni</label>
+
+              <!--Quantity of pizza-->
+              <p>Pizza Quantity:</p>
+              <label for="quantity">Add the number of Pizza's you want</label>
+              <input type="number" id="quantity" name="quantity">
+
+              <!--Size of pizza-->
+              <p>Pizza Size:</p>
+              <input type="radio" id="Small" name="Pizza Size" value="Small">
+              <label>Small</label>
+              <input type="radio" id="Medium" name="Pizza Size" value="Medium">
+              <label>Medium</label>
+              <input type="radio" id="Large" name="Pizza Size" value="Large">
+              <label>Large</label>
+
+              <p>Choose Toppings:</p>
+              <input type="checkbox" id="Extra-Cheese" name="Choose Toppings" value="Extra Cheese">
+              <label>Extra Cheese</label>
+              <input type="checkbox" id="Onions" name="Choose Toppings" value="Onions">
+              <label>Onions</label>
+              <input type="checkbox" id="Mushroom" name="Choose Toppings" value="Mushroom">
+              <label>Mushroom</label>
+              <input type="checkbox" id="Green-Peppers" name="Choose Toppings" value="Green Peppers">
+              <label>Green Peppers</label>
+
+              <p>Deserts:</p>
+              <input type="radio" id="Icecream" name="Deserts" value="Icecream">
+              <label>Icecream</label>
+              <input type="radio" id="Brownie" name="Deserts" value="Brownie">
+              <label>Brownie</label>
+              <input type="radio" id="Apple-pie" name="Deserts" value="Apple pie">
+              <label>Apple pie</label>
+            </div>
+
+            <!--Asking for personal and delivery details with the method of payment-->
+            <label>First Name:</label>
+            <p><input type="text"></p>
+            <label>Last Name:</label>
+            <p><input type="text"></p>
+            <!--This is email input and only accepts content that contain @ symbol-->
+            <label>Email:</label>
+            <p><input type="email"></p>
+            <!--Our next element is Phone number which uses a specific pattern to take input from users.-->
+            <label for="Phone">Phone Number:</label>
+            <p><input type="tel" id="Phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+            <!--We will now use address-->
+            <label>Address:</label>
+            <p><input type="text"></p>
+            <!--Now we will use textarea, this looks different from other inputs-->
+            <textarea placeholder="Leave a Message" rows="10" cols="30"></textarea>
+
+
+            <!--Next is the delivery details-->
+            <p>Delivery Details:</p>
+            <label>Delivery Date:</label>
+            <input type="date">
+            <label>Delivery Time:</label>
+            <input type="time">
+
+            <!--This element describes the payment options which a user can use.-->
+            <p>Payment Options:</p>
+            <label for="Payment">Select method of Payment</label>
+            <select id="Payment" name="Payment">
+              <option value="Debit Card">Debit card</option>
+              <option value="Online">Online</option>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+
+            <p><input type="submit" value="Submit" ></p>
+            <p><input type="reset"></p>
+
+       </form>
+     </section>
+     <section>
+       <!--Adding h2 for some details of company -->
+       <h2> Our Services </h2>
+
+       <!--Some information about the services and offers provided by franchisee-->
+       <p>We have really nice items that are both tasty and plentiful. Fresh ingredients are also used to create our delectable pizza.      </p>
+
+       <p>The pizza will be delivered in 30 minutes. Numerous promotions are offered by our franchisee, including limitless pizza, 
+        buy one get one free, and promotions that are only good for a certain period of time.</p>
+
+       <p>We are having our stores in 10 cities of India.</p>
+
+     </section>
+   </main>
+ </body>
+</html>

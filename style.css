@@ -1,0 +1,39 @@
+/*First we will apply background image to our html page.*/
+body{
+  background-image: url(../img/98ed8912-09c0-4b5a-ba0b-6578d284d6b9.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+/*Now we will set margin of body*/
+body{
+  margin: 0px;
+}
+/*Defining the padding in the header content including logo.*/
+header{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*Changing the height and width of our logo with the help of > this sysmbol which means into, so you would read it like "image inside anchor which is inside div which is also inside the header"*/
+header > div > a > img{
+  width: auto;
+  height: 150px;
+}
+/*We will target our heading elements*/
+h1,h1,h3,h4,h5,h6{
+  font-family: sans-serif;
+}
+/*In this we will define the padding of section*/
+main > section{
+  padding: 2% 2% 2% 2%;
+}
+/*Next we will be change colour of paragraph and heading of second section */
+main > section + section{
+  color: #0a0101;
+  font-family: sans-serif;
+}
